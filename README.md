@@ -1,2 +1,2 @@
-# ⚛ MERN ~ WEB ~ STACK
+# ⚛ MERN-WEB-STACK
 ## 🎯**DevOps/Cloud Engineering > MERN WEB STACK**
