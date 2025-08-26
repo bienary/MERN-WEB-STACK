@@ -7,11 +7,11 @@
 
 > M — MongoDB → Flexible, NoSQL database for storing data in JSON-like format.
 
-> E — Express.js → Lightweight backend framework to power APIs and server logic.
+> * E — Express.js → Lightweight backend framework to power APIs and server logic.
 
-> R — React.js → Dynamic front-end library for building fast, interactive user interfaces.
+>  - R — React.js → Dynamic front-end library for building fast, interactive user interfaces.
 
-> N — Node.js → JavaScript runtime that runs your server-side code efficiently.
+>   + N — Node.js → JavaScript runtime that runs your server-side code efficiently.
 
 
 ---
