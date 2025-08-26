@@ -12,6 +12,7 @@
 > R — React.js → Dynamic front-end library for building fast, interactive user interfaces.
 
 > N — Node.js → JavaScript runtime that runs your server-side code efficiently.
+<img width="1024" height="451" alt="image" src="https://github.com/user-attachments/assets/b413c37a-2e84-4dea-833e-83ead6c1cd4e" />
 
 
 ---
