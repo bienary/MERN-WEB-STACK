@@ -17,9 +17,9 @@
 
 ---
 ## **STEP 0 ~ PREPARING PREREQUISITES**
-To complete this project you will need an AWS account and a virtual server with Ubuntu Server OS.
-Sign in to AWS free tier account and create a new EC2 Instance of t3.micro family with Ubuntu Server 24.04.
-After creating your EC2 Instances, you can add  `Tag Name` to it with a value that corresponds to a current project you are working on.
+- To complete this project you will need an AWS account and a virtual server with Ubuntu Server OS.
+- Sign in to AWS free tier account and create a new EC2 Instance of t3.micro family with Ubuntu Server 24.04.
+- After creating your EC2 Instances, you can add  `Tag Name` to it with a value that corresponds to a current project you are working on.
 
 <img width="1352" height="509" alt="image" src="https://github.com/user-attachments/assets/a0effa94-5709-4643-8261-8ae231c6820a" />
 
