@@ -12,7 +12,8 @@
 > R — `React.js` → A frontend framework developed by facebook. It is based on `JavaScript`, used to build User Interface (UI) components.
 
 > N — `Node.js` → A JavaScript runtime environment. It is used to run JavaScript on a machine rather than in a browser.
-<img width="1024" height="451" alt="image" src="https://github.com/user-attachments/assets/b413c37a-2e84-4dea-833e-83ead6c1cd4e" />
+<img width="532" height="155" alt="image" src="https://github.com/user-attachments/assets/13cea2a8-aad1-4861-8a52-b7393bc2d85c" />
+
 
 
 ---
