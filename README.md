@@ -25,6 +25,7 @@
 
 ---
 - You can also set up your `Mobaxterm` to connect to EC2 Instances.
+
 ![mobaxterm ssh login](https://github.com/user-attachments/assets/96beff79-b751-4fea-b757-a1ef7ce1ff1a)
 
 ---
