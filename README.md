@@ -23,3 +23,9 @@
 
 <img width="1352" height="509" alt="image" src="https://github.com/user-attachments/assets/a0effa94-5709-4643-8261-8ae231c6820a" />
 
+---
+- You can also set up your `Mobaxterm` to connect to EC2 Instances.
+![mobaxterm ssh login](https://github.com/user-attachments/assets/96beff79-b751-4fea-b757-a1ef7ce1ff1a)
+
+---
+**STEP 1 ~ BACKEND CONFIGURATION**
