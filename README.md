@@ -15,9 +15,10 @@
 
 <img width="1024" height="451" alt="image" src="https://github.com/user-attachments/assets/1f747e01-deb0-461f-a4c6-66b7f01eca54" />
 
-
-
-
-
 ---
+## **STEP 0 ~ PREPARING PREREQUISITES**
+To complete this project you will need an AWS account and a virtual server with Ubuntu Server OS.
+Sign in to AWS free tier account and create a new EC2 Instance of t3.micro family with Ubuntu Server 24.04.
+After creating your EC2 Instances, you can add  `Tag Name` to it with a value that corresponds to a current project you are working on.
 
+![Name Tag](https://github.com/user-attachments/assets/73075097-4a03-48c9-9d8c-a2550ed1bb5b)
