@@ -43,4 +43,50 @@ sudo apt upgrade
 
 Lets get the location of `Node.js` software from Ubuntu repositories.
 
-```curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -```
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+### **Install Node.js on the server**
+
+`NPM` is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts.
+- Run the command below to install both `nodejs` and `npm.`
+
+```
+sudo apt-get install -y nodejs
+```
+
+- Verify the node installation with the command below.
+
+```
+node -v
+```
+
+- Verify the node installation with the command below.
+
+```
+npm -v
+```
+
+### **Application Code Setup**
+
+- Create a new directory for your `To-DO` project:
+
+```
+mkdir Todo
+```
+
+Run the command below to verify that the `Todo` directory is created with `ls` command.
+
+```
+ls
+```
+
+📝 To see more useful information about files and directories, use the following combination of keys `ls -lih`. You can learn more about different useful keys for `ls` command with `ls --help`.
+
+- Change your curruent directory to the newly created one:
+
+```
+cd Todo
+```
+
