@@ -43,5 +43,4 @@ sudo apt upgrade
 
 Lets get the location of `Node.js` software from Ubuntu repositories.
 
-```
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -```
