@@ -30,3 +30,8 @@
 
 ---
 **STEP 1 ~ BACKEND CONFIGURATION**
+
+Update Ubuntu
+```
+sudo apt update
+```
