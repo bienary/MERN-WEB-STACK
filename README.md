@@ -47,6 +47,8 @@ Lets get the location of `Node.js` software from Ubuntu repositories.
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
 
+<img width="1004" height="423" alt="image" src="https://github.com/user-attachments/assets/09cfc8f1-1cd2-4059-9739-ab7cfcb3a3ac" />
+
 ### **Install Node.js on the server**
 
 `NPM` is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts.
