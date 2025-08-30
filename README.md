@@ -154,3 +154,73 @@ app.listen(port, () => {
 });
 ```
 
+- Notice that we have specified to use port `5000` in the code. This will be required later when we go on the browser.
+- Use `:w` to save in `vim` and use `:qa` to exit `vim`
+
+- Let’s start the server to see if it works.
+- Open your terminal in the same directory as your `index.js` file and type:
+
+```
+node index.js
+```
+
+- You shoud see `Server running on port 5000` in your terminal.
+
+-Open this port in `EC2 Security Groups`. Check Project 1 Step 1 - Installing the `Nginx Web Server`. There we created an inbound rule to open `TCP port 80`, you need to do the same for `port 5000`, like this:
+
+- Open your browser and access your server's `Public IP` or `Public DNS` name followed by `port 5000`:
+
+```
+http://<PublicIP-or-PublicDNS>:5000
+```
+
+### 📍**Routes**
+- There are three actions that our To-Do application needs to be able to do: `Create a new task` `Display list of all tasks` `Delete a completed task`
+- Each task will be associated with some particular endpoint and will use different standard HTTP request methods: `POST` `GET` `DELETE`.
+- For each task, we need to create `routes` that will define various endpoints that the `To-do` app will depend on.
+
+-Let us create a folder `routes`
+
+```
+mkdir routes
+```
+
+- Change directory to `routes` folder.
+
+```
+cd routes
+```
+
+- Create a file `api.js` with the command below.
+
+```
+touch api.js
+```
+
+- Open the file with the command below.
+
+```
+vim api.js
+```
+
+-Type the below code in the file.
+
+```
+const express = require ('express');
+const router = express.Router();
+
+router.get('/todos', (req, res, next) => {
+
+});
+
+router.post('/todos', (req, res, next) => {
+
+});
+
+router.delete('/todos/:id', (req, res, next) => {
+
+});
+
+module.exports = router;
+```
+
