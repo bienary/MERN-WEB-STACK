@@ -96,7 +96,59 @@ cd Todo
 
 
 - Next use the command `npm.init` to initialise your project, so that a new file named `package.json` will be created.
-- Follow the prompts after running the command. Press `Enter` several times to accept default values, the accept to write out the `package.jason` file by typing yes.
+- Follow the prompts after running the command. Press `Enter` several times to accept default values, the accept to write out the `package.json` file by typing yes.
+- Run the command `ls` to confirm that you have `package.json` file created.
 
 ---
+
+### **Install ExpressJS**
+- To install express, install it using npm:
+
+```
+npm install express
+```
+
+- Next, create the file `index.js` with the command below:
+
+```
+touch index.js
+```
+
+- Run `ls` to confirm that your `index.js file is successfully created.
+- Install the `dotenv` module
+
+```
+npm install dotenv
+```
+
+- Open the `index.js` file.
+
+```
+vim index.js
+```
+
+- Type the code below into it and save.
+
+```
+const express = require('express');
+require('dotenv').config();
+
+const app = express();
+
+const port = process.env.PORT || 5000;
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "\*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.use((req, res, next) => {
+  res.send('Welcome to Express');
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`)
+});
+```
 
