@@ -154,6 +154,8 @@ app.listen(port, () => {
 });
 ```
 
+<img width="1113" height="624" alt="image" src="https://github.com/user-attachments/assets/784b37f8-014d-4d60-ad1d-5edac166c2e0" />
+
 - Notice that we have specified to use port `5000` in the code. This will be required later when we go on the browser.
 - Use `:w` to save in `vim` and use `:qa` to exit `vim`
 
@@ -164,9 +166,14 @@ app.listen(port, () => {
 node index.js
 ```
 
+<img width="1112" height="519" alt="image" src="https://github.com/user-attachments/assets/e69c695a-cea7-4dc5-ba0c-cc72ca749d9c" />
+
+
 - You shoud see `Server running on port 5000` in your terminal.
 
 -Open this port in `EC2 Security Groups`. Check Project 1 Step 1 - Installing the `Nginx Web Server`. There we created an inbound rule to open `TCP port 80`, you need to do the same for `port 5000`, like this:
+
+<img width="1181" height="475" alt="image" src="https://github.com/user-attachments/assets/339eda28-4c6f-496a-b1c1-86cb50a2e80e" />
 
 - Open your browser and access your server's `Public IP` or `Public DNS` name followed by `port 5000`:
 
