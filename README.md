@@ -95,3 +95,8 @@ cd Todo
 <img width="1105" height="592" alt="image" src="https://github.com/user-attachments/assets/94950902-2bf9-4677-b397-06a2c5066c36" />
 
 
+- Next use the command `npm.init` to initialise your project, so that a new file named `package.json` will be created.
+- Follow the prompts after running the command. Press `Enter` several times to accept default values, the accept to write out the `package.jason` file by typing yes.
+
+---
+
