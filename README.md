@@ -203,7 +203,7 @@ touch api.js
 vim api.js
 ```
 
--Type the below code in the file.
+- Type the below code in the file.
 
 ```
 const express = require ('express');
