@@ -233,3 +233,8 @@ router.delete('/todos/:id', (req, res, next) => {
 module.exports = router;
 ```
 
+<img width="1107" height="572" alt="image" src="https://github.com/user-attachments/assets/b9d9ddfb-0c72-4736-b6c4-dfe554d2bcef" />
+
+
+
+
