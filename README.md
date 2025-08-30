@@ -140,7 +140,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "\*");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
@@ -150,11 +150,11 @@ app.use((req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`)
+  console.log(`Server running on port ${port}`);
 });
 ```
 
-<img width="1113" height="624" alt="image" src="https://github.com/user-attachments/assets/784b37f8-014d-4d60-ad1d-5edac166c2e0" />
+<img width="1110" height="570" alt="image" src="https://github.com/user-attachments/assets/bab4256f-8b7a-408c-88a4-152f9360e59e" />
 
 - Notice that we have specified to use port `5000` in the code. This will be required later when we go on the browser.
 - Use `:w` to save in `vim` and use `:qa` to exit `vim`
@@ -180,6 +180,8 @@ node index.js
 ```
 http://<PublicIP-or-PublicDNS>:5000
 ```
+
+<img width="1366" height="175" alt="image" src="https://github.com/user-attachments/assets/371a72da-0cbe-4a9d-82c6-f02036bfef27" />
 
 ### 📍**Routes**
 - There are three actions that our To-Do application needs to be able to do: `Create a new task` `Display list of all tasks` `Delete a completed task`
