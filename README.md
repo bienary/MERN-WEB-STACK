@@ -235,6 +235,12 @@ module.exports = router;
 
 <img width="1107" height="572" alt="image" src="https://github.com/user-attachments/assets/b9d9ddfb-0c72-4736-b6c4-dfe554d2bcef" />
 
+---
 
+### **Models**
+- A model is at the heart of `JavaScript` based applications, and it is what makes it interactive.
+- We will use models to define the database schema.
+- `Schema` is a blueprint of how the database will be constructed.
+- To create a `Schema` and a model, install `mongoose` which is a `Node.js` package that makes working with `mongodb` easier.
 
 
