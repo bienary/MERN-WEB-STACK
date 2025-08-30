@@ -99,6 +99,9 @@ cd Todo
 - Follow the prompts after running the command. Press `Enter` several times to accept default values, the accept to write out the `package.json` file by typing yes.
 - Run the command `ls` to confirm that you have `package.json` file created.
 
+<img width="881" height="549" alt="image" src="https://github.com/user-attachments/assets/41c42793-5e96-480d-8275-570860b2c740" />
+
+
 ---
 
 ### **Install ExpressJS**
