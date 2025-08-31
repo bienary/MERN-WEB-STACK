@@ -252,3 +252,72 @@ npm install mongoose
 - Create a new folder with `mkdir models` command
 - Change directory into the newly created `models` folder with `cd models`.
 
+- Inside the folder, create a file and name it `todo.js`
+- All three commands above can be defined in one line to be executed consequently with the help of `&&` operator.
+
+```
+mkdir models && cd models && touch todo.js
+```
+
+<img width="981" height="257" alt="image" src="https://github.com/user-attachments/assets/6bb45efb-b081-48db-a184-3d6bf26a19c1" />
+
+- Open the file created with `vim todo.js` then type the code below in the file:
+
+```
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+// create schema for todo
+const TodoSchema = new Schema({
+action: {
+type: String,
+required: [true, 'The todo text field is required']
+}
+})
+
+// create model for todo
+const Todo = mongoose.model('todo', TodoSchema);
+
+module.exports = Todo;
+```
+
+<img width="1110" height="362" alt="image" src="https://github.com/user-attachments/assets/659d9c52-4a34-4e1b-a54f-3e5f2d5fbf72" />
+
+- Update `routes` from the file `api.js` in `routes` directory to make use of the new model.
+- In `Routes` directory, open `api.js` with `vim api.js`, delete the code inside with `:%d` command and type in the code below into it then save and exit.
+
+```
+const express = require ('express');
+const router = express.Router();
+const Todo = require('../models/todo');
+
+router.get('/todos', (req, res, next) => {
+
+//this will return all the data, exposing only the id and action field to the client
+Todo.find({}, 'action')
+.then(data => res.json(data))
+.catch(next)
+});
+
+router.post('/todos', (req, res, next) => {
+if (req.body.action) {
+Todo.create(req.body)
+.then(data => res.json(data))
+.catch(next)
+}else {
+res.json({
+error: "The input field is empty"
+})
+}
+});
+
+router.delete('/todos/:id', (req, res, next) => {
+Todo.findOneAndDelete({"_id": req.params.id})
+.then(data => res.json(data))
+.catch(next)
+})
+
+module.exports = router;
+```
+
+<img width="1238" height="685" alt="image" src="https://github.com/user-attachments/assets/b2af0a07-8e85-45fc-87a1-469dcd750adc" />
