@@ -243,4 +243,12 @@ module.exports = router;
 - `Schema` is a blueprint of how the database will be constructed.
 - To create a `Schema` and a model, install `mongoose` which is a `Node.js` package that makes working with `mongodb` easier.
 
+- Change directory back `Todo` folder with `cd ..` and install `Mongoose`
+
+```
+npm install mongoose
+```
+
+- Create a new folder with `mkdir models` command
+- Change directory into the newly created `models` folder with `cd models`.
 
