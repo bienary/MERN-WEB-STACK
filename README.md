@@ -321,3 +321,12 @@ module.exports = router;
 ```
 
 <img width="1238" height="685" alt="image" src="https://github.com/user-attachments/assets/b2af0a07-8e85-45fc-87a1-469dcd750adc" />
+
+---
+
+### **MongoDB Database**
+
+- We need a database where we will store our data.
+- We will make use of `mLab`.
+- `mLab` provides `MongoDB` database as a service solution (`DBaaS`).
+- You need to sign up for a shared clusters free account, which is ideal for our use case.
