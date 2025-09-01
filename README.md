@@ -340,7 +340,8 @@ module.exports = router;
 
 - Create a `MongoDB` database and collection inside `mLab`
 
-![todo-db](https://github.com/user-attachments/assets/4c014b4d-e63d-47e1-944a-c2be6ebea1b9)
+<img width="398" height="265" alt="image" src="https://github.com/user-attachments/assets/3ca41281-3ae0-410d-8e66-9e51309dbe66" />
+
 
 - Create a file in your `Todo` directory and name it `.env.`
 
@@ -405,4 +406,7 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 ```
+
+<img width="1107" height="580" alt="image" src="https://github.com/user-attachments/assets/320f85e4-8289-4cfa-8f38-dcaba24b8a89" />
+
 
