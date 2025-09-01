@@ -330,3 +330,8 @@ module.exports = router;
 - We will make use of `mLab`.
 - `mLab` provides `MongoDB` database as a service solution (`DBaaS`).
 - You need to sign up for a shared clusters free account, which is ideal for our use case.
+- Follow the sign up process, select `AWS` as the cloud provider, and choose a region near you.
+- Allow access to the `MongoDB` database from anywhere(Not secure, but it is ideal for testing)
+
+![Network Acess](https://github.com/user-attachments/assets/029e4fdf-0042-48fe-b584-5c67dd29918c)
+
