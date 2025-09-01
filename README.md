@@ -334,10 +334,75 @@ module.exports = router;
 
 <img width="861" height="598" alt="image" src="https://github.com/user-attachments/assets/103b0eff-a24f-4f63-970c-6e3a2a6d7024" />
 
-
-
 - Allow access to the `MongoDB` database from anywhere(Not secure, but it is ideal for testing)
 
 ![Network Acess](https://github.com/user-attachments/assets/029e4fdf-0042-48fe-b584-5c67dd29918c)
 
 - Create a `MongoDB` database and collection inside `mLab`
+
+![todo-db](https://github.com/user-attachments/assets/4c014b4d-e63d-47e1-944a-c2be6ebea1b9)
+
+- Create a file in your `Todo` directory and name it `.env.`
+
+```
+touch .env
+vi .env
+```
+
+- Add the connection string to access the database in it, just as below:
+
+```
+DB = 'mongodb+srv://<username>:<password>@<network-address>/<dbname>?retryWrites=true&w=majority'
+```
+
+- How to get your connection string. `click connect` >> `click drivers` & `copy the connection  string`
+
+<img width="1347" height="611" alt="image" src="https://github.com/user-attachments/assets/9177eb46-03d5-47f1-a2ed-970518c11f74" />
+
+- Next, we need to update the `index.js` o reflect the use of `.env` so that `Node.js` can connect to the database.
+- Delete the existing content in the file, and update it with the entire code below.
+- To do that using `vim`, follow below steps
+- Open the file with `vim index.js` >> `press esc` >> `Type :` >> `Type %d` >> `Hit Enter`
+- The entire content will be deleted, then, `Press i` to enter the `insert mode` in `vim`
+- Now, type the entire code below in the file.
+
+```
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const routes = require('./routes/api');
+const path = require('path');
+require('dotenv').config();
+
+const app = express();
+
+const port = process.env.PORT || 5000;
+
+// Connect to the database
+mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log(`Database connected successfully`))
+  .catch(err => console.log(err));
+
+// Since mongoose promise is deprecated, we override it with Node's promise
+mongoose.Promise = global.Promise;
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.use(bodyParser.json());
+
+app.use('/api', routes);
+
+app.use((err, req, res, next) => {
+  console.log(err);
+  next();
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+```
+
