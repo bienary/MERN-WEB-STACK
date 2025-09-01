@@ -49,7 +49,7 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 <img width="1004" height="423" alt="image" src="https://github.com/user-attachments/assets/09cfc8f1-1cd2-4059-9739-ab7cfcb3a3ac" />
 
-### **Install Node.js on the server**
+## **Install Node.js on the server**
 
 `NPM` is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts.
 - Run the command below to install both `nodejs` and `npm.`
@@ -70,7 +70,7 @@ node -v
 npm -v
 ```
 
-### **Application Code Setup**
+## **Application Code Setup**
 
 - Create a new directory for your `To-DO` project:
 
@@ -103,7 +103,7 @@ cd Todo
 
 ---
 
-### **Install ExpressJS**
+## **Install ExpressJS**
 - To install express, install it using npm:
 
 ```
@@ -183,7 +183,7 @@ http://<PublicIP-or-PublicDNS>:5000
 
 <img width="1366" height="175" alt="image" src="https://github.com/user-attachments/assets/371a72da-0cbe-4a9d-82c6-f02036bfef27" />
 
-### 📍**Routes**
+## 📍**Routes**
 - There are three actions that our To-Do application needs to be able to do: `Create a new task` `Display list of all tasks` `Delete a completed task`
 - Each task will be associated with some particular endpoint and will use different standard HTTP request methods: `POST` `GET` `DELETE`.
 - For each task, we need to create `routes` that will define various endpoints that the `To-do` app will depend on.
@@ -237,7 +237,7 @@ module.exports = router;
 
 ---
 
-### **Models**
+## **Models**
 - A model is at the heart of `JavaScript` based applications, and it is what makes it interactive.
 - We will use models to define the database schema.
 - `Schema` is a blueprint of how the database will be constructed.
@@ -324,7 +324,7 @@ module.exports = router;
 
 ---
 
-### **MongoDB Database**
+## **MongoDB Database**
 
 - We need a database where we will store our data.
 - We will make use of `mLab`.
@@ -421,7 +421,7 @@ node index.js
 
 ---
 
-### ** Testing Backend Code Without Frontend using RESTful API**
+## ** Testing Backend Code Without Frontend using RESTful API**
 
 - In this project, we will use `Postman` to test our `API`.
 - Download and install `postman` on your machine.
