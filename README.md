@@ -334,6 +334,8 @@ module.exports = router;
 
 <img width="861" height="598" alt="image" src="https://github.com/user-attachments/assets/103b0eff-a24f-4f63-970c-6e3a2a6d7024" />
 
+
+
 - Allow access to the `MongoDB` database from anywhere(Not secure, but it is ideal for testing)
 
 ![Network Acess](https://github.com/user-attachments/assets/029e4fdf-0042-48fe-b584-5c67dd29918c)
