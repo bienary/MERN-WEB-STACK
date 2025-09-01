@@ -421,3 +421,11 @@ node index.js
 
 ---
 
+### ** Testing Backend Code Without Frontend using RESTful API**
+
+- In this project, we will use `Postman` to test our `API`.
+- Download and install `postman` on your machine.
+- Test all the `API` endpoints and make sure they are working.
+- open your `Postman`, create a `POST` request to the API `http://<PublicIP-or-PublicDNS>:5000/api/todos`.
+- This request sends a new task to our To-DO list so the application could store it in the database.
+✍️ Make sure your set header key `Content-Type` as `application/json`
