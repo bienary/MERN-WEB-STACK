@@ -409,7 +409,7 @@ app.listen(port, () => {
 
 <img width="1107" height="580" alt="image" src="https://github.com/user-attachments/assets/320f85e4-8289-4cfa-8f38-dcaba24b8a89" />
 
-- Start your server using the command below:
+- **Start your server using the command below:**
 
 ```
 node index.js
@@ -421,7 +421,7 @@ node index.js
 
 ---
 
-## ** Testing Backend Code Without Frontend using RESTful API**
+## **Testing Backend Code Without Frontend using RESTful API**
 
 - In this project, we will use `Postman` to test our `API`.
 - Download and install `postman` on your machine.
