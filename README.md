@@ -260,8 +260,6 @@ npm install mongoose
 mkdir models && cd models && touch todo.js
 ```
 
-<img width="981" height="257" alt="image" src="https://github.com/user-attachments/assets/6bb45efb-b081-48db-a184-3d6bf26a19c1" />
-
 - Open the file created with `vim todo.js` then type the code below in the file:
 
 ```
@@ -281,8 +279,6 @@ const Todo = mongoose.model('todo', TodoSchema);
 
 module.exports = Todo;
 ```
-
-<img width="1110" height="362" alt="image" src="https://github.com/user-attachments/assets/659d9c52-4a34-4e1b-a54f-3e5f2d5fbf72" />
 
 - Update `routes` from the file `api.js` in `routes` directory to make use of the new model.
 - In `Routes` directory, open `api.js` with `vim api.js`, delete the code inside with `:%d` command and type in the code below into it then save and exit.
@@ -416,7 +412,8 @@ app.listen(port, () => {
 node index.js
 ```
 
-<img width="1110" height="238" alt="image" src="https://github.com/user-attachments/assets/52bf5cca-ed00-4157-a45a-7ce0937bf064" />
+<img width="1313" height="201" alt="Screenshot From 2025-09-20 06-40-12" src="https://github.com/user-attachments/assets/e055c290-73a8-4870-b685-18d45608008c" />
+
 
 - If you see a message`Database connected successfully`, we have our backend configured.
 
