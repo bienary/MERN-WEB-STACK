@@ -491,8 +491,14 @@ vi package.json
 ```
 npm run dev
 ```
+<img width="1318" height="692" alt="Screenshot From 2025-09-20 08-54-27" src="https://github.com/user-attachments/assets/02c8b1fc-5e13-4e90-8fcb-007f76a742f7" />
+
+
 - Your app should open and start running on `localhost:3000`
 - In order to be able to access the application from the Internet you have to open TCP port 3000 on EC2 by adding a new Security Group rule.
+
+<img width="1318" height="692" alt="Screenshot From 2025-09-20 08-30-11" src="https://github.com/user-attachments/assets/4dee03e9-bef9-424d-a591-8c034639b74e" />
+
 
 **Creating your React Components**
 
@@ -583,6 +589,10 @@ cd ..
 ```
 npm install axios
 ```
+
+<img width="1170" height="530" alt="Screenshot From 2025-09-21 22-10-52" src="https://github.com/user-attachments/assets/b22a722b-8164-4fc7-9295-a03524d31224" />
+
+
 Go to `components` directory
 ```
 cd src/components
@@ -688,7 +698,7 @@ cd ..
 ```
 vi App.js
 ```
-Write the code below into it
+- Write the code below into it
 ```
 import React from 'react';
 
@@ -837,10 +847,16 @@ cd ../..
 npm run dev
 ```
 
+<img width="1322" height="725" alt="Screenshot From 2025-09-21 22-36-59" src="https://github.com/user-attachments/assets/74e61c6f-0a88-40ce-b801-7fe584be39b3" />
+
 - If no errors when saving all these files, our To-Do app should be ready and fully functional with the functionality discussed earlier: creating a task, deleting a task and viewing all your tasks.
 
+<img width="1312" height="320" alt="Screenshot From 2025-09-21 22-28-31" src="https://github.com/user-attachments/assets/ad820d5c-0b0f-4010-9106-44b8574d2fcb" />
 
+---
 
+## 🎀**CONGRATULATIONS**🎀
 
+`**In this Project #3 you have created a simple To-Do and deployed it to MERN stack. You wrote a frontend application using React.js that communicates with a backend application written using Expressjs. You also created a Mongodb backend for storing tasks in a database.**`
 
 
