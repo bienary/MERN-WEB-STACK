@@ -427,3 +427,70 @@ node index.js
 - open your `Postman`, create a `POST` request to the API `http://<PublicIP-or-PublicDNS>:5000/api/todos`.
 - This request sends a new task to our To-DO list so the application could store it in the database.
 ✍️ Make sure your set header key `Content-Type` as `application/json`
+
+<img width="1274" height="736" alt="Screenshot From 2025-09-20 06-49-20" src="https://github.com/user-attachments/assets/0f69ba1f-6cb0-43e7-a1eb-a176509faff2" />
+
+- Create a `GET` request to your API on http://<PublicIP-or-PublicDNS>:5000/api/todos.
+
+<img width="1295" height="737" alt="Screenshot From 2025-09-20 07-22-03" src="https://github.com/user-attachments/assets/6810e7fa-5def-4a3d-bf91-d8b134d1f3c3" />
+
+<img width="1295" height="737" alt="Screenshot From 2025-09-20 07-27-34" src="https://github.com/user-attachments/assets/552b9fd8-809d-4d8b-ba67-bb5315ddcb0e" />
+
+
+- To `DELETE` a task - you need to send its ID as a part of `DELETE` request.
+
+<img width="1295" height="737" alt="Screenshot From 2025-09-20 07-47-18" src="https://github.com/user-attachments/assets/1264ece7-eef9-40a5-aab3-89c7283b3904" />
+
+<img width="1314" height="737" alt="Screenshot From 2025-09-20 07-51-38" src="https://github.com/user-attachments/assets/afc515a8-9141-4fff-84fe-966acca0ba2f" />
+
+
+## 🖥️ **FRONTEND CREATION**
+
+- In the same root directory as your backend code, which is the Todo directory, run:
+```
+npx create-react-app client
+```
+- This will create a new folder in your Todo directory called client, where you will add all the react code.
+
+**Running a React App**
+- Before testing the react app, there are some dependencies that need to be installed.
+- Install `concurrently`. It is used to run more than one command simultaneously from the same terminal window.
+
+```
+npm install concurrently --save-dev
+```
+
+- Install `nodemon`. It is used to run and monitor the server.
+
+```
+npm install nodemon --save-dev
+```
+
+- In `Todo` folder open the `package.json` file. Change the "scripts" to }, before the "keywords" and replace with the code below.
+
+```
+"scripts": {
+"start": "node index.js",
+"start-watch": "nodemon index.js",
+"dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+},
+```
+**Configure Proxy in `package.json`**
+
+- Change directory to `client`
+```
+cd client
+```
+- Open the `package.json` file
+```
+vi package.json
+```
+- Add the key value pair in the package.json file "proxy": `http://localhost:5000`.
+
+- Now, ensure you are inside the `Todo` directory, and simply do:
+```
+npm run dev
+```
+- Your app should open and start running on `localhost:3000`
+- In order to be able to access the application from the Internet you have to open TCP port 3000 on EC2 by adding a new Security Group rule.
+
